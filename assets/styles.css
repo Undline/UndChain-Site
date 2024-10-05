@@ -4,25 +4,33 @@ body {
     background-color: #1b1e23;
     margin: 0;
     padding: 0;
+    color: #e0e6ed;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    color: #e0e6ed;
+    min-height: 100vh; /* Ensures the content fills the viewport */
 }
 
 /* Container */
 .container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #252a32;
+    box-shadow: 0px 0px 15px rgba(0, 255, 150, 0.2); /* Soft glow effect */
+    border-radius: 8px;
+    box-sizing: border-box;
     text-align: center;
 }
 
+/* Headings */
 h1 {
     font-size: 3em;
-    color: #eef3f4; 
+    color: #eef3f4; /* White text */
 }
 
 .status {
     font-size: 1.5em;
-    color: #dbd7dc;
+    color: #b1adb3;
     margin-top: 10px;
 }
