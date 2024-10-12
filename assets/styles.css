@@ -6,31 +6,134 @@ body {
     padding: 0;
     color: #e0e6ed;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh; /* Ensures the content fills the viewport */
+    flex-direction: column;
+    min-height: 100vh;
+    overflow-x: hidden; /* Prevent horizontal scroll */
 }
 
-/* Container */
+/* Navigation */
+nav {
+    background-color: #252a32;
+    padding: 0 20px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px; /* Fixed height for desktop view */
+    box-sizing: border-box;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap; /* Allow the links to wrap on smaller screens */
+    justify-content: center; /* Ensure they stay centered */
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #e0e6ed;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+nav ul li a:hover {
+    color: #7df9ff;
+}
+
+/* Container for content box */
 .container {
     max-width: 800px;
+    width: 90%;
     margin: 50px auto;
     padding: 20px;
     background-color: #252a32;
-    box-shadow: 0px 0px 15px rgba(0, 255, 150, 0.2); /* Soft glow effect */
+    box-shadow: 0px 0px 15px rgba(0, 255, 150, 0.2);
     border-radius: 8px;
-    box-sizing: border-box;
     text-align: center;
+    box-sizing: border-box;
 }
 
-/* Headings */
-h1 {
-    font-size: 3em;
-    color: #eef3f4; /* White text */
+/* Specific font size changes for h1 and p */
+.container h1 {
+    font-size: 2.5em; /* Increase size of h1 only */
 }
 
-.status {
-    font-size: 1.5em;
-    color: #b1adb3;
-    margin-top: 10px;
+.container p {
+    font-size: 1.3em; /* Adjust the size of paragraphs only */
+}
+
+/* Footer */
+footer {
+    background-color: #252a32;
+    padding: 10px 20px; /* Reduce padding for a more compact look */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #e0e6ed;
+    margin-top: auto;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+footer p {
+    margin: 0 0 5px 0; /* Reduce margin between "Connect with us" and the links */
+    font-size: 1.2em;
+    color: #7df9ff;
+}
+
+footer ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap; /* Allow social media links to wrap on smaller screens */
+    justify-content: center; /* Ensure links are centered */
+}
+
+footer ul li {
+    display: inline-block;
+    margin: 0 10px; /* Reduce spacing between links */
+}
+
+footer ul li a {
+    color: #e0e6ed;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+footer ul li a:hover {
+    color: #7df9ff;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    nav {
+        height: auto; /* Allow the nav area to expand based on content */
+        padding: 10px 20px; /* Add padding to the navigation for spacing */
+    }
+    nav ul {
+        flex-direction: column; /* Stack navigation links vertically on mobile */
+    }
+    nav ul li {
+        margin: 10px 0;
+    }
+    .container {
+        margin: 20px auto;
+        padding: 15px;
+    }
+    footer ul {
+        flex-direction: column; /* Stack footer links vertically on mobile */
+    }
+    footer ul li {
+        margin: 5px 0;
+    }
 }
