@@ -10,6 +10,8 @@ body {
     min-height: 100vh;
     overflow-x: hidden; /* Prevent horizontal scroll */
 }
+
+/* Hyperlinks */
 a {
     color: #e0e6ed; /* Aurora blue color */
     text-decoration: none;
@@ -17,7 +19,7 @@ a {
 }
 
 a:hover {
-    color: #7df9ff; /* Hover color for links (Aurora green) */
+    color: #7df9ff; /* Hover color for links (Aurora blue) */
 }
 
 /* Navigation */
@@ -26,34 +28,48 @@ nav {
     padding: 0 20px;
     width: 100%;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 60px; /* Fixed height for desktop view */
+    justify-content: space-between; /* Space between logo and links */
+    align-items: center; /* Vertically center logo and links */
+    height: 60px; /* Fixed height */
     box-sizing: border-box;
 }
 
-nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
+/* Logo in the navigation bar */
+nav .logo {
     display: flex;
-    flex-wrap: wrap; /* Allow the links to wrap on smaller screens */
-    justify-content: center; /* Ensure they stay centered */
+    align-items: center; /* Vertically center the logo */
 }
 
-nav ul li {
+nav .logo img {
+    height: 40px; /* Adjust the logo height */
+    width: auto;
+}
+
+/* Navigation links */
+.nav-links {
+    display: flex;
+    justify-content: flex-end; /* Right-align the links */
+}
+
+.nav-links li {
     display: inline-block;
     margin-right: 20px;
 }
 
-nav ul li a {
+.nav-links li a {
     color: #e0e6ed;
     text-decoration: none;
     font-weight: 600;
 }
 
-nav ul li a:hover {
+.nav-links li a:hover {
     color: #7df9ff;
+}
+
+/* Hamburger menu (hidden by default) */
+.hamburger-menu {
+    display: none;
+    cursor: pointer;
 }
 
 /* Container for content box */
@@ -71,17 +87,17 @@ nav ul li a:hover {
 
 /* Specific font size changes for h1 and p */
 .container h1 {
-    font-size: 2.5em; /* Increase size of h1 only */
+    font-size: 2.5em; /* Increase size of h1 */
 }
 
 .container p {
-    font-size: 1.3em; /* Adjust the size of paragraphs only */
+    font-size: 1.3em; /* Adjust the size of paragraphs */
 }
 
 /* Footer */
 footer {
     background-color: #252a32;
-    padding: 10px 20px; /* Reduce padding for a more compact look */
+    padding: 10px 20px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -91,11 +107,10 @@ footer {
     margin-top: auto;
     width: 100%;
     box-sizing: border-box;
-    
 }
 
 footer p {
-    margin: 0 0 10px 0; /* Reduce margin between "Connect with us" and the links */
+    margin: 0 0 10px 0;
     font-size: 1.2em;
     color: #e0e6ed;
 }
@@ -105,13 +120,13 @@ footer ul {
     padding: 0;
     margin: 0;
     display: flex;
-    flex-wrap: wrap; /* Allow social media links to wrap on smaller screens */
-    justify-content: center; /* Ensure links are centered */
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 footer ul li {
     display: inline-block;
-    margin: 0 10px; /* Reduce spacing between links */
+    margin: 0 10px;
 }
 
 footer ul li a {
@@ -127,24 +142,24 @@ footer ul li a:hover {
 /* Hero Section */
 .hero {
     background-color: #252a32;
-    padding: 100px 20px;  /* Add padding to create space inside the hero */
+    padding: 100px 20px;
     text-align: left;
-    color: #e0e6ed;  /* Keep the text white */
-    background-image: url('../assets/hero-background.png');  /* Optional background image */
+    color: #e0e6ed; /* White text */
+    background-image: url('../assets/hero-background.png'); /* Optional background image */
     background-size: cover;
     background-position: center;
-    margin: 50px 0;  /* Add space below the hero section */
+    margin: 50px 0; /* Space below the hero section */
 }
 
 .hero-content h1 {
     font-size: 3em;
-    color: #e0e6ed;  /* White text */
+    color: #e0e6ed;
     margin: 0;
 }
 
 .hero-content p {
     font-size: 1.5em;
-    color: #e0e6ed;  /* White text */
+    color: #e0e6ed;
     margin-top: 10px;
 }
 
@@ -154,7 +169,7 @@ footer ul li a:hover {
     justify-content: space-around;
     padding: 50px 20px;
     background-color: #1b1e23;
-    margin-bottom: 50px;  /* Add space below the cards section */
+    margin-bottom: 50px; /* Space below the cards section */
 }
 
 .card {
@@ -164,17 +179,17 @@ footer ul li a:hover {
     border-radius: 8px;
     text-align: center;
     box-shadow: 0px 0px 15px rgba(0, 255, 150, 0.2);
-    margin: 0 20px;  /* Add spacing between each card */
+    margin: 0 20px; /* Space between each card */
 }
 
 .card h3 {
-    color: #e0e6ed;  /* White text */
+    color: #e0e6ed;
     font-size: 1.8em;
 }
 
 .card p {
     font-size: 1.2em;
-    color: #e0e6ed;  /* White text */
+    color: #e0e6ed;
 }
 
 /* Document class for About Page */
@@ -184,15 +199,13 @@ footer ul li a:hover {
     margin: 50px auto;
     padding: 30px;
     background-color: #252a32;
-    /*border: 2px solid #7df9ff; /* Square borders */
-    text-align: left; /* Keep the text left-aligned */
-    /*box-shadow: 0px 0px 15px rgba(0, 255, 150, 0.2); /* Subtle shadow */
+    text-align: left;
     box-sizing: border-box;
 }
 
 /* About page specific styles */
 .document h1, .document h2 {
-    color: #7df9ff; /* Title colors */
+    color: #7df9ff;
 }
 
 .document p {
@@ -200,38 +213,97 @@ footer ul li a:hover {
     font-size: 1.2em;
 }
 
+/* Custom scrollbar for Chrome, Safari, and Edge */
+::-webkit-scrollbar {
+    width: 8px; /* Width of the scrollbar */
+}
+
+::-webkit-scrollbar-track {
+    background: #1b1e23; /* Background color of the scrollbar track */
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #e0e6ed; /* Color of the scrollbar thumb */
+    border-radius: 10px; /* Make it rounded */
+    border: 2px solid #1b1e23; /* Add padding around the thumb */
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #7df9ff; /* Color when hovered */
+}
+
+
 /* Responsive adjustments */
 @media (max-width: 768px) {
     nav {
-        height: auto; /* Allow the nav area to expand based on content */
-        padding: 10px 20px; /* Add padding to the navigation for spacing */
+        height: 60px;
+        padding: 10px 20px;
     }
-    nav ul {
-        flex-direction: column; /* Stack navigation links vertically on mobile */
+
+    .nav-links {
+        display: none; /* Hide links by default */
+        flex-direction: column;
+        align-items: flex-end; /* Align links to the right */
+        position: absolute;
+        top: 60px;
+        right: 0; /* Ensure the links stay on the right side */
+        background-color: #252a32;
+        padding-right: 20px; /* Add some padding on the right */
     }
-    nav ul li {
+
+    .nav-links.active {
+        display: flex; /* Show links when active */
+    }
+
+    .nav-links li {
         margin: 10px 0;
+        background-color: #252a32;
+        width: auto; /* Make the background fit the text */
+        padding: 10px 20px; /* Padding for clickable area */
+        display: inline-block; /* Make the background fit content */
+    }
+
+    .nav-links li a {
+        color: #e0e6ed;
+        text-decoration: none;
+        font-weight: 600;
+    }
+
+    .nav-links li a:hover {
+        color: #7df9ff;
+    }
+    
+    .hamburger-menu {
+        display: block;
+        position: absolute;
+        top: 15px;
+        right: 20px;
     }
     .container {
         margin: 20px auto;
         padding: 15px;
     }
+
     footer ul {
-        flex-direction: column; /* Stack footer links vertically on mobile */
+        flex-direction: column;
     }
+
     footer ul li {
         margin: 5px 0;
     }
+
     .utility-cards {
         flex-direction: column;
         align-items: center;
     }
+
     .card {
         width: 80%;
         margin-bottom: 20px;
     }
+
     .document {
-        width: 95%; /* Slightly wider for mobile */
+        width: 95%;
         padding: 20px;
     }
 }

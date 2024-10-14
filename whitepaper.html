@@ -9,12 +9,25 @@
 <body>
     <!-- Navigation Bar -->
     <nav>
-        <ul>
+        <!-- Logo -->
+        <a href="index.html" class="logo">
+            <img src="assets/shield_logo.png" alt="UndChain Logo">
+        </a>
+        <!-- Navigation Links -->
+        <ul class="nav-links">
             <li><a href="index.html">Home</a></li>
             <li><a href="whitepaper.html">Whitepaper</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
         </ul>
+        <!-- Hamburger Menu (only visible on mobile) -->
+        <div class="hamburger-menu" onclick="toggleMenu()">
+            <svg width="30" height="30" xmlns="http://www.w3.org/2000/svg" fill="#fff">
+                <rect width="30" height="5" />
+                <rect y="12" width="30" height="5" />
+                <rect y="24" width="30" height="5" />
+            </svg>
+        </div>
     </nav>
 
     <!-- Whitepaper Content -->
@@ -50,5 +63,12 @@
             <li><a href="https://youtube.com/@undline_codes" target="_blank">YouTube</a></li>
         </ul>
     </footer>
+    <script>
+        // JavaScript to toggle the menu
+        function toggleMenu() {
+            const navLinks = document.querySelector('.nav-links');
+            navLinks.classList.toggle('active');
+        }
+    </script>
 </body>
 </html>
