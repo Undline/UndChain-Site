@@ -285,11 +285,12 @@ footer ul li a:hover {
     }
 
     footer ul {
-        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: center;
     }
 
     footer ul li {
-        margin: 5px 0;
+        margin: 0 10px;
     }
 
     .utility-cards {
