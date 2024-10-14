@@ -167,6 +167,29 @@ footer ul li a:hover {
     color: #e0e6ed;  /* White text */
 }
 
+/* Document class for About Page */
+.document {
+    max-width: 800px;
+    width: 90%;
+    margin: 50px auto;
+    padding: 30px;
+    background-color: #252a32;
+    border: 2px solid #7df9ff; /* Square borders */
+    text-align: left; /* Keep the text left-aligned */
+    box-shadow: 0px 0px 15px rgba(0, 255, 150, 0.2); /* Subtle shadow */
+    box-sizing: border-box;
+}
+
+/* About page specific styles */
+.document h1, .document h2 {
+    color: #7df9ff; /* Title colors */
+}
+
+.document p {
+    color: #e0e6ed;
+    font-size: 1.2em;
+}
+
 /* Responsive adjustments */
 @media (max-width: 768px) {
     nav {
@@ -196,5 +219,9 @@ footer ul li a:hover {
     .card {
         width: 80%;
         margin-bottom: 20px;
+    }
+    .document {
+        width: 95%; /* Slightly wider for mobile */
+        padding: 20px;
     }
 }
