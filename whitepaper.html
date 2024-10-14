@@ -31,27 +31,8 @@
     </nav>
 
     <!-- Whitepaper Content -->
-    <div class="container">
-        <h1>Test UndChain Whitepaper</h1>
-        <p class="status">This whitepaper outlines the vision, structure, and roadmap of UndChain. Below you will find detailed sections explaining how the blockchain operates.</p>
-        
-        <h2>Introduction</h2>
-        <p>UndChain is a decentralized cloud service blockchain that allows users to interact as clients and utilize resources such as computation, storage, and access...</p>
-
-        <h2>Key Features</h2>
-        <p>The following are the core components of the UndChain ecosystem:</p>
-        <ul>
-            <li>Computation</li>
-            <li>Storage</li>
-            <li>Access</li>
-        </ul>
-
-        <h2>Roadmap</h2>
-        <p>Phase 1: Initial Development<br>
-           Phase 2: Validator Network Expansion<br>
-           Phase 3: Full Decentralization and Public Launch</p>
-
-        <!-- Add more sections as needed -->
+    <div class="container" id="whitepaper-container">
+        <!-- The Markdown will be rendered here -->
     </div>
 
     <!-- Footer -->
@@ -63,7 +44,21 @@
             <li><a href="https://youtube.com/@undline_codes" target="_blank">YouTube</a></li>
         </ul>
     </footer>
+
+    <!-- Include Marked.js Library -->
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+
+    <!-- JavaScript to Fetch and Render the Markdown -->
     <script>
+        async function loadMarkdown() {
+            const response = await fetch('assets/undchain-whitepaper.md'); // Path to your markdown file
+            const markdown = await response.text();
+            const container = document.getElementById('whitepaper-container');
+            container.innerHTML = marked(markdown); // Convert Markdown to HTML
+        }
+
+        loadMarkdown();
+
         // JavaScript to toggle the menu
         function toggleMenu() {
             const navLinks = document.querySelector('.nav-links');
