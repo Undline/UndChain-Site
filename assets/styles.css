@@ -179,12 +179,29 @@ footer ul li a:hover {
     background-color: #252a32;
     padding: 100px 20px;
     text-align: left;
-    color: #e0e6ed; /* White text */
-    background-image: url('../assets/hero-background.png'); /* Optional background image */
-    background-size: cover;
-    background-position: center;
-    margin: 50px 0; /* Space below the hero section */
+    color: #e0e6ed;
+    position: relative; /* Make the hero section the containing block for absolute positioning */
+    margin: 50px 0;
+    overflow: hidden; /* Ensure no horizontal scroll */
 }
+
+/* Hero content */
+.hero-content {
+    z-index: 1; /* Ensure text stays on top of the image */
+    position: relative; /* Relative positioning for content */
+}
+
+/* Hero background image */
+.hero-background-img {
+    position: absolute;
+    right: -230px; /* Adjust this value to move the image off to the right */
+    top: 0;
+    height: 100%; /* Make sure the image stretches to fit the height of the section */
+    z-index: 0; /* Ensure the image is behind the text */
+    object-fit: cover; /* Ensure the image covers the hero section */
+    opacity: 0.2; /* Optional: Make the image subtle */
+}
+
 
 .hero-content h1 {
     font-size: 3em;
