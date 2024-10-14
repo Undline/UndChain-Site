@@ -69,6 +69,8 @@ nav .logo img {
 .nav-links {
     display: flex;
     justify-content: flex-end; /* Right-align the links */
+    align-items: center;
+    padding-top: 14px;
 }
 
 .nav-links li {
@@ -294,7 +296,7 @@ footer ul li a:hover {
         margin: 10px 0;
         background-color: #252a32;
         width: auto; /* Make the background fit the text */
-        padding: 10px 20px; /* Padding for clickable area */
+        padding: 5px 20px; /* Padding for clickable area */
         display: inline-block; /* Make the background fit content */
     }
 
