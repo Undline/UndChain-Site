@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UndChain</title>
+    <link rel="stylesheet" href="assets/styles.css">
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/small_sheild_logo.png" sizes="32x32">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav>
+        <!-- Logo -->
+        <a href="index.html" class="logo">
+            <img src="assets/shield_logo.png" alt="UndChain Logo">
+        </a>
+        <!-- Navigation Links -->
+        <ul class="nav-links">
+            <li><a href="whitepaper.html">Whitepaper</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="developers.html">Developer</a></li>
+        </ul>
+        <!-- Hamburger Menu (only visible on mobile) -->
+        <div class="hamburger-menu" onclick="toggleMenu()">
+            <svg width="30" height="30" xmlns="http://www.w3.org/2000/svg" fill="#fff">
+                <rect width="30" height="5" />
+                <rect y="12" width="30" height="5" />
+                <rect y="24" width="30" height="5" />
+            </svg>
+        </div>
+    </nav>
+
+    <!-- About Content -->
+    <div class="document">
+        <h1>Want to develop for UndChain?</h1>
+        <p class="status">UndChain is under development at this time; UndChain 
+            also has a developer fund that helps support new developers 
+            coming in. This allows developers to earn coins while they develop, 
+            this is done by using something called the <b>bounty</b> system.
+            This system allows anyone to come in and contribute code and earn
+            based on the value of what they provided. <I>This also applies to 
+            documentation and graphics.</I>
+        </p>
+
+        <h2>Core Development</h2>
+        <p>This involves the fundamental protocols with UndChain. 
+            Things such as network communications, cryptographic protocols, 
+            standardizing packet types, defining user types (Chain Owner, 
+            Validator, Partner, Client) as well as how they 
+            are meant to interact on the network. We are also working on scaling
+            via sub-netting the network to allow more Validators to spread the 
+            load. 
+        </p>
+
+        <h2>Co-Chain Development</h2>
+        <p>This portion of development is meant for co-chains which is how
+            UndChain can expand it's functionality (like importing a module).
+            The co-chains that are currently under development are using Python 
+            rather than using Pseudo (our Pythonic programming language). Those
+            Co-Chains are: <b>Auction House</b> (digital asset trading platform),
+            <b>Pages</b> (decentralized websites), <b>SQeeL</b> (decentralized 
+            database), <b>Mimic</b> (AI framework), <b>Code Ledger</b> (software
+            repository system) and <b>Smack</b> (social media framework).
+        </p>
+
+        <h2>How to join?</h2>
+        <p>We do not have an effective means of joining at this time other than
+            reaching out via our social media contacts. Please feel free to DM, 
+            please be sure to introduce yourself and state what you would like to
+            see or offer the project. Even if you believe it's small or if you 
+            know someone who might be interested. The goal is 
+        </p>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>Connect with us</p>
+        <ul>
+            <li><a href="https://x.com/theundline" target="_blank">X</a></li>
+            <li><a href="https://github.com/Undline/UndChain" target="_blank">GitHub</a></li>
+            <li><a href="https://youtube.com/@undline_codes" target="_blank">YouTube</a></li>
+        </ul>
+    </footer>
+
+    <script>
+        // JavaScript to toggle the menu
+        function toggleMenu() {
+            const navLinks = document.querySelector('.nav-links');
+            navLinks.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>
