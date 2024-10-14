@@ -194,9 +194,10 @@ footer ul li a:hover {
 /* Hero background image */
 .hero-background-img {
     position: absolute;
-    right: -230px; /* Adjust this value to move the image off to the right */
+    right: -550px; /* Adjust this value to move the image off to the right */
     top: 0;
-    height: 100%; /* Make sure the image stretches to fit the height of the section */
+    width: 150%;
+    height: 140%; /* Make sure the image stretches to fit the height of the section */
     z-index: 0; /* Ensure the image is behind the text */
     object-fit: cover; /* Ensure the image covers the hero section */
     opacity: 0.2; /* Optional: Make the image subtle */
