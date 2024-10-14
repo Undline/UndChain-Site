@@ -278,10 +278,12 @@ footer ul li a:hover {
         flex-direction: column;
         align-items: flex-end; /* Align links to the right */
         position: absolute;
-        top: 60px;
+        top: 44px;
         right: 0; /* Ensure the links stay on the right side */
         background-color: #252a32;
         padding-right: 20px; /* Add some padding on the right */
+        z-index: 999;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Add a soft shadow */
     }
 
     .nav-links.active {
