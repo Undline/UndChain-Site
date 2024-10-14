@@ -91,10 +91,11 @@ footer {
     margin-top: auto;
     width: 100%;
     box-sizing: border-box;
+    
 }
 
 footer p {
-    margin: 0 0 5px 0; /* Reduce margin between "Connect with us" and the links */
+    margin: 0 0 10px 0; /* Reduce margin between "Connect with us" and the links */
     font-size: 1.2em;
     color: #e0e6ed;
 }
