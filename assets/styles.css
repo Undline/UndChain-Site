@@ -54,7 +54,7 @@ nav ul li a:hover {
     margin: 50px auto;
     padding: 20px;
     background-color: #252a32;
-    box-shadow: 0px 0px 15px rgba(0, 255, 150, 0.2);
+    box-shadow: 0px 0px 15px rgba(125, 249, 255, 0.2);
     border-radius: 8px;
     text-align: center;
     box-sizing: border-box;
@@ -87,7 +87,7 @@ footer {
 footer p {
     margin: 0 0 5px 0; /* Reduce margin between "Connect with us" and the links */
     font-size: 1.2em;
-    color: #7df9ff;
+    color: #e0e6ed;
 }
 
 footer ul {
