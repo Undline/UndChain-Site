@@ -19,7 +19,7 @@ a {
 }
 
 a:hover {
-    color: #7df9ff; /* Hover color for links (Aurora blue) */
+    color: #00B0F0; /* Hover color for links (Aurora blue) */
 }
 
 /* General styles for unordered lists */
@@ -85,7 +85,7 @@ nav .logo img {
 }
 
 .nav-links li a:hover {
-    color: #7df9ff;
+    color: #00B0F0;
 }
 
 /* Hamburger menu (hidden by default) */
@@ -171,7 +171,7 @@ footer ul li a {
 }
 
 footer ul li a:hover {
-    color: #7df9ff;
+    color: #00B0F0;
 }
 
 /* Hero Section */
@@ -230,7 +230,7 @@ footer ul li a:hover {
     width: 30%;
     border-radius: 8px;
     text-align: center;
-    box-shadow: 0px 0px 15px rgba(0, 255, 150, 0.2);
+    box-shadow: 0px 0px 15px rgba(0, 176, 240, 0.2);
     margin: 0 20px; /* Space between each card */
 }
 
@@ -257,7 +257,7 @@ footer ul li a:hover {
 
 /* About page specific styles */
 .document h1, .document h2 {
-    color: #7df9ff;
+    color: #00B0F0;
 }
 
 .document p {
@@ -281,7 +281,7 @@ footer ul li a:hover {
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background-color: #7df9ff; /* Color when hovered */
+    background-color: #00B0F0; /* Color when hovered */
 }
 
 
@@ -324,7 +324,7 @@ footer ul li a:hover {
     }
 
     .nav-links li a:hover {
-        color: #7df9ff;
+        color: #00B0F0;
     }
     
     .hamburger-menu {
